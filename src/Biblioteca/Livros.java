@@ -2,8 +2,9 @@ package Biblioteca;
 
 import java.util.Scanner;
 
-public abstract class Livros {
+public class Livros {
 
+    //dar uma forma de converter genero em lista
     private String genero;
     private String nome;
     private String isbn;
