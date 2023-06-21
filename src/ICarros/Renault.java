@@ -2,9 +2,8 @@ package ICarros;
 
 public class Renault extends Carros{
 
-    public Renault(String marca, short ano, double valor, String cor, byte portas, double velocidade) {
+    public Renault(String marca, int ano, double valor, String cor, int portas, double velocidade) {
         super(marca, ano, valor, cor, portas, velocidade);
-        marca = "Renault";
     }
 
     @Override
@@ -15,13 +14,13 @@ public class Renault extends Carros{
 
     @Override
     public void frear() {
-        super.frear();
         setVelocidade(getVelocidade() - 5);
+        super.frear();
     }
 
     @Override
     public void acelerar() {
-        super.acelerar();
         setVelocidade(getVelocidade() + 10);
+        super.acelerar();
     }
 }

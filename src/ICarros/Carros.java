@@ -5,22 +5,13 @@ import java.util.List;
 public abstract class Carros {
 
     private String marca;
-
-    private short ano;
+    private int ano;
     private double valor;
     private String cor;
-    private byte portas;
+    private int portas;
     private double velocidade;
 
-    public double getVelocidade() {
-        return velocidade;
-    }
-
-    public void setVelocidade(double velocidade) {
-        this.velocidade = velocidade;
-    }
-
-    public Carros(String marca, short ano, double valor, String cor, byte portas, double velocidade) {
+    public Carros(String marca, int ano, double valor, String cor, int portas, double velocidade) {
         this.marca = marca;
         this.ano = ano;
         this.valor = valor;
@@ -34,10 +25,43 @@ public abstract class Carros {
     };
 
     public void frear(){
-        System.out.println("Freando... minha velocidade está em " + getVelocidade());
+        if (getVelocidade() >= 0) {
+            System.out.println("Freando... minha velocidade está em " + getVelocidade());
+        } if (getVelocidade() < 0) {
+            System.out.println("Estou parado");
+            setVelocidade(0);
+        }
     };
 
     public void acelerar(){
         System.out.println("Acelerando... minha velocidade está em " + getVelocidade());
     };
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public int getPortas() {
+        return portas;
+    }
+
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(double velocidade) {
+        this.velocidade = velocidade;
+    }
 }

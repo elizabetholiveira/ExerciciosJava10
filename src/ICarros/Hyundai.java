@@ -2,9 +2,8 @@ package ICarros;
 
 public class Hyundai extends Carros{
 
-    public Hyundai(String marca, short ano, double valor, String cor, byte portas, double velocidade) {
+    public Hyundai(String marca, int ano, double valor, String cor, int portas, double velocidade) {
         super(marca, ano, valor, cor, portas, velocidade);
-        marca = "Hyundai";
     }
 
     @Override
@@ -15,13 +14,13 @@ public class Hyundai extends Carros{
 
     @Override
     public void frear() {
-        super.frear();
         setVelocidade(getVelocidade() - 2);
+        super.frear();
     }
 
     @Override
     public void acelerar() {
-        super.acelerar();
         setVelocidade(getVelocidade() + 15);
+        super.acelerar();
     }
 }
