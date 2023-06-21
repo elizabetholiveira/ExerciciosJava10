@@ -12,6 +12,10 @@ public class Main {
         funcionario1.setDataAdmissao(new Date());
         funcionario1.setSalario(1500);
 
+        System.out.println(funcionario1.getNome());
+        System.out.println(funcionario1.getDataAdmissao());
+        System.out.println(funcionario1.getSalario());
+
 
     }
 }

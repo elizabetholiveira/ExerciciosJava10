@@ -10,11 +10,11 @@ public class Funcionario {
     private double salario;
 
     //descobrir como fazer essa lista funcionar
-    List<Integer> identificador = new ArrayList<Integer>();
+    //List<Integer> identificador = new ArrayList<Integer>();
 
-    public Funcionario(List<Integer> identificador) {
-        this.identificador = identificador;
-    }
+    //public Funcionario(List<Integer> identificador) {
+    //    this.identificador = identificador;
+    //}
 
     public String getNome() {
         return nome;

@@ -44,6 +44,26 @@ public class Livros {
         System.out.println("O livro foi registrado com todos os atributos");
     };
 
+    public void detalhesLivro(String isbn){
+        System.out.println("ISBN: " + getIsbn());
+    };
+    public void detalhesLivro(String isbn, String nome){
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Nome: " + getNome());
+    };
+    public void detalhesLivro(String isbn, String nome, String genero){
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Nome: " + getNome());
+        System.out.println("Gênero: " + getGenero());
+    };
+    public void detalhesLivro(String isbn, String nome, String genero, String autor){
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Nome: " + getNome());
+        System.out.println("Gênero: " + getGenero());
+        System.out.println("Autor: " + getAutor());
+    };
+
+
     public String getGenero() {
         return genero;
     }
